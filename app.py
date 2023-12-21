@@ -10,8 +10,19 @@ st.write("""
          # Weight prediction
          """
          )
+data = {
+        'claw_length_cm': [1, 2, 3, 4, 5],
+        'endangered': [0, 1, 0, 1, 0],
+        'size_cm': [10, 15, 20, 25, 30],
+        'specie': [0, 1, 0, 1, 0],
+        'sub_specie': [0, 1, 0, 1, 0],
+        'tail_length_cm': [5, 10, 15, 20, 25],
+        'weight_kg': [2, 4, 6, 8, 10]
+}
+df = pd.DataFrame(data)
 
-df = pd.read_csv("sloth_data.csv")
+
+#df = pd.read_csv("sloth_data.csv")
 X = df[['claw_length_cm', 'endangered', 'size_cm', 'specie', 'sub_specie', 'tail_length_cm']]
 y = df['weight_kg']
 

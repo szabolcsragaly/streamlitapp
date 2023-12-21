@@ -1,5 +1,6 @@
 import streamlit as st
 import tensorflow as tf
+import pandas as pd
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.datasets import make_regression
 from sklearn.preprocessing import LabelEncoder
